@@ -5,7 +5,6 @@ import time
 import sys
 import os
 
-
 answers=["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes, definitely.", "You may rely on it.", "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy, please try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful.", "Nope.", "Trust me, DON'T ask again.", "Sure, why not?"]
 
 def main():
@@ -17,8 +16,6 @@ def main():
     time.sleep(random.randrange(2,6)) #Force the machine to pause to simulate "thinking".
     print1by1(random.choice(answers)) #Answer chosen at random and printed one character at a time.
     print()
-
-
 
 def print1by1(text, delay=0.1):
     """Set parameters for how fast or slow answers get printed"""
@@ -39,8 +36,5 @@ def restart():
             break
         else:
             print("Please enter either Yes or No.")
-
 main()
 restart()
-
-
